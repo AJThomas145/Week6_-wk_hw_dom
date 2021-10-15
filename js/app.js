@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('JavaScript loaded');
-
+    
     const newStarFormSubmit = function(event) {
         event.preventDefault();
 
@@ -34,13 +33,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const newStarForm = document.querySelector("#new-sports-star");
     newStarForm.addEventListener("submit", newStarFormSubmit);
 
+    const deleteAllClick = function(event) {
+        const sportsStarList = document.querySelector("#sports-star-list");
+        sportsStarList.innerHTML = "";
+    }
+
+    const deleteAllButton = document.querySelector("#delete-all");
+    deleteAllButton.addEventListener("click", deleteAllClick)
+
+
+ 
+
 
   })
 
 // 1. once data is entered, grab that data - done
 // 2.add that data to an element - done
 // 3. creating new element for the list - done
-// 4. append data onto new list
-// 5. clear input form
-// 6. add to the dom
-// 7. create delete all
+// 4. append data onto new list - done
+// 5. clear input form - done
+// 6. add to the dom - done
+// 7. create delete all - done

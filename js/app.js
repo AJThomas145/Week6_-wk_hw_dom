@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.target.reset();
 
     }
-    
+
     const newStarForm = document.querySelector("#new-sports-star");
     newStarForm.addEventListener("submit", newStarFormSubmit);
 
@@ -23,8 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     deleteAllButton.addEventListener("click", deleteAllClick)
 
   })
-
-
 
 
   const createSportStar = function(event) {
@@ -50,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     return newStarList;
 
 }
+
+
 
 // 1. once data is entered, grab that data - done
 // 2.add that data to an element - done
